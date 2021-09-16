@@ -1,0 +1,48 @@
+.app-bar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  background: white;
+  z-index: 2;
+
+  &__logo {
+    height: 7rem;
+    width: 7rem;
+    font-size: 4rem;
+    align-self: stretch;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-blue);
+    margin-right: auto;
+
+    svg {
+      fill: var(--color-white);
+    }
+  }
+
+  &__dropdown {
+    font-size: 2rem;
+    margin-right: 4rem;
+  }
+
+  &__icon {
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    cursor: pointer;
+    color: var(--color-blue);
+    svg {
+      fill: var(--color-blue);
+    }
+  }
+}

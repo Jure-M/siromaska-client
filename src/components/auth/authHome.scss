@@ -1,0 +1,74 @@
+.auth-home {
+  height: 100vh;
+  background-color: var(--color-blue);
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 7rem calc(100vh - 7rem);
+  }
+
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+    align-self: flex-end;
+    margin-left: 3rem;
+  }
+
+  &__banner {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    h1 {
+      font-family: var(--font-display);
+      color: white;
+      text-align: left;
+      font-size: 6rem;
+      font-weight: 300;
+      margin-bottom: 3rem;
+    }
+    p {
+      color: White;
+      font-size: 2rem;
+      max-width: 70%;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2rem;
+  }
+
+  &__links {
+    font-family: var(--font-display);
+    font-size: 2rem;
+  }
+
+  &__link {
+    margin-right: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  &__active-link {
+    border-bottom: 1px solid black;
+  }
+
+  &__content {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content-inner {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

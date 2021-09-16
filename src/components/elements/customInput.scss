@@ -1,0 +1,40 @@
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0rem;
+
+  &__label {
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &__input {
+    padding: 1.1rem 0.5rem;
+    margin-bottom: 1.3rem;
+    font-size: 2rem;
+    border-radius: 2px;
+    border: 1px solid gray;
+    color: black;
+
+    &.has-error {
+      border: 1px solid red;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      border: 1px solid blue;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    bottom: 4%;
+    margin-top: 0.4rem;
+    margin-left: 0.2rem;
+    font-size: 1.4rem;
+    color: red;
+  }
+}

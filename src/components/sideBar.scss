@@ -1,0 +1,28 @@
+.sidebar {
+  position: fixed;
+  padding-top: 7rem;
+  width: 7rem;
+  min-height: 100vh;
+  background-color: var(--color-white);
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nav-item {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-blue);
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: var(--color-gray-200);
+      color: var(--color-blue-dark);
+    }
+  }
+}
